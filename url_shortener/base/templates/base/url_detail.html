@@ -5,9 +5,9 @@
     <h3>URL Shortener</h3>
 </div>
 <div class="detail-wrapper">
-    <div><h3>{{url_object.short_code}}</h3></div>    
+    <div class="detail-wrapper-item"><h3>{{url_object.short_code}}</h3></div>    
     <hr>
-    <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div class="detail-wrapper-item" style="display: flex; align-items: center; justify-content: space-between;">
         <div>
             <h4>{{ url_object.url|truncatechars:24 }}</h4>    
         </div>

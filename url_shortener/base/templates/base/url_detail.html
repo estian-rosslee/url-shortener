@@ -1,0 +1,9 @@
+{% extends 'base/base.html' %}
+{% block content %}
+
+<h3>{{url_object.short_code}}</h3>
+<hr>
+<h4>{{ url_object.url|truncatechars:24 }}</h4>
+<a href="{% url 'traverse' url_object.short_code %}">Go</a>
+
+{% endblock %}
